@@ -5,6 +5,7 @@ NI<-c(132,138,120,164,126,110,152,110,110,110,110,110,158,55,59,54,123,55,55,55,
 shapiro.test(PB)
 shapiro.test(NI)
 #Correlação de Spearman 
+library(ggplot2); library("ggpubr")
 ggscatter(data, x = "NI", y = "PB",
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE, cor.method = "spearman",
